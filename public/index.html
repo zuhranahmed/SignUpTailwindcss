@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | TailwindCSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="p-1 flex justify-center items-center bg-blue-200 h-screen font-sans"
+    >
+      <div class="flex h-2/3 flex-col md:flex-row">
+        <div class="md:w-1/3 bg-indigo-600 text-gray-100 p-8">
+          <p class="tracking-wide text-3xl font-semibold mb-16">
+            <span class="font-semibold text-4xl">b</span>oardme.
+          </p>
+          <h1 class="text-xl font-semibold tracking-wide mb-6 leading-7">
+            Implement user
+            <span class="border-b-4 border-pink-500 border-dotted"
+              >onboarding</span
+            >
+            experiences with just a few clicks
+          </h1>
+          <p class="text-sm">
+            Guide your customers on a fantastic journey within your web app.
+          </p>
+        </div>
+
+        <div class="md:w-2/3 px-10 py-16 bg-indigo-100 text-indigo-900">
+          <h2 class="text-2xl font-bold mb-10 text-center md:text-left">
+            Create your <br />account
+          </h2>
+          <form>
+            <div class="flex flex-col">
+              <label for="name" class="text-sm font-bold tracking-wide mb-1"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                required
+                placeholder="Enter your full name"
+                class="md:w-4/5 px-5 py-4 mb-6 rounded outline-none placeholder-gray-300"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="email" class="text-sm font-bold tracking-wide mb-1"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                required
+                placeholder="Enter your email"
+                class="md:w-4/5 px-5 py-4 mb-6 rounded outline-none placeholder-gray-300"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="password" class="text-sm font-bold tracking-wide mb-1"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="password"
+                required
+                placeholder="Enter password"
+                class="md:w-4/5 px-5 py-4 mb-6 rounded outline-none placeholder-gray-300"
+              />
+            </div>
+            <div class="flex items-center justify-center md:w-4/5">
+              <button
+                type="submit"
+                class="bg-indigo-600 text-gray-100 w-full py-3 text-lg font-semibold tracking-wide rounded hover:bg-indigo-500 transition-all duration-200"
+              >
+                Sign up
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
